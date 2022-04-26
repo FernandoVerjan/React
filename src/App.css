@@ -4,3 +4,41 @@ h1,h2{
   font-weight: 500;
   line-height: 2!important;
 }
+.offline-notification {
+  transition: transform 0.3s;
+  transform: translateY(-100%) translateX(-50%);
+  position: fixed;
+  left: 50%;
+  background: #222;
+  color: white;
+  padding: 0.5em;
+  text-align: center;
+}
+.offline-notification a {
+  color: white;
+}
+.offline-notification a:visited {
+  color: white;
+}
+.offline-notification:hover .offline-notification_explanation {
+  display: block;
+}
+.offline-notification_explanation {
+  display: none;
+  background: inherit;
+  padding-top: 1em;
+}
+
+.offline-msg {
+  display: none;
+}
+.offline .offline-notification {
+  transition: transform 0.3s;
+  transform: translateY(0) translateX(-50%);
+}
+.offline .online-msg {
+  display: none;
+}
+.offline .offline-msg {
+  display: block;
+}

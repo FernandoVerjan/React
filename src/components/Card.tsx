@@ -8,7 +8,7 @@ export default function Card(CardProps: { name:string; image:string; state:strin
 
     const [type, setType] = useState('primary'); 
     return (
-        <div className='col-3 d-flex justify-content-center mt-4'>
+        <div className='col col-sm-12 col-lg-3 col-md-6 d-flex justify-content-center mt-4'>
             <div className="card" style={{ width: '18rem' }}>
                 <div className="card-body">
                     <h5 className="card-title">{CardProps.name} </h5>
